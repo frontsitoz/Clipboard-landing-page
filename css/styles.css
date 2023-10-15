@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+/* Las CSS Custom Properties o propiedades personalizadas (también llamadas variables CSS) nos permiten definir nombres para valores determinados de las propiedades  */
+:root{
+    --StrongCyan: hsl(171, 66%, 44%);
+--LightBlue: hsl(233, 100%, 69%);
+--DarkGrayishBlue: hsl(210, 10%, 33%);
+--GrayishBlue: hsl(201, 11%, 66%);
+--padding-container: 80px 0;
+}
+
+body{
+   
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+   
+}
+
+.hero{
+    --padding-container: 120px 0 80px;
+    background-image: url(../images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+}
+.hero__img{
+    display: block;
+    margin: 0 auto;
+    margin-bottom:4.5em;
+}
+.hero__title{
+    color: var(--DarkGrayishBlue);
+margin-bottom: 1rem;
+}
+
+.hero__paragraph{
+    color: var(--GrayishBlue);
+    line-height: 1.5;
+  
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+   margin-top: 2.3em;
+  gap: 2em;
+ text-align: center;
+}
+
+.buttons__cta{
+color: #fff;
+background-color: var(--StrongCyan);
+text-decoration: none;
+border-radius: 2em;
+font-weight: 600;
+padding: 1em 0;
+box-shadow: 0 0 10px -5px var(--StrongCyan);
+}
+
+.buttons__cta--blue{
+box-shadow: 0 0 10px -5px var(--LightBlue);
+background-color: var(--LightBlue);
+}
